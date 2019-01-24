@@ -37,14 +37,13 @@ Hotel Table:
 	- HotelConfigs - To traverse between the Hotel table to RoomConfig or Room tables.
 
 Reservation Table:
-- Primary Motivation: Several hotels need to be tracked for the Async Inn chain - ergo, we should have a table whose rows each represent a specific instance of a hotel chain.
+- Primary Motivation: 
 - Properties:
-	- Id
-	- Name
-	- City
-	- State
-	- Address
-	- Phone
+	- Id: Primary key for the table. Represents a unique numeric value for a given reservations. Integer type.
+	- HotelId: Part of the composite key for the table, along with the CustomerId and CheckInId. Repr
+	- CustomerId
+	- CheckInId
+	- CheckOutId
 - Relations
 	- Reservations
 	- HotelConfigs
